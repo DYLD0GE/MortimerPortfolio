@@ -4,21 +4,24 @@
   <title> Dylan's Portfolio</title>
   <link href="style.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script src='script.js'></script>
 </head>
 <body id=bodytres>
   <h1>Dylan Mortimer</h1>
   <div id="nav">
+    <header>
       <a href="index.html">HOME</a> |
       <a href="about.html">ABOUT</a> |
       <a href="contact.html"><strong>CONTACT</strong></a>
+    </header>
   </div>
   <div></div>
-  <div><p id="formp">Feel free to send me a message!</p></div>
+  <div><h2 id='message'>Feel free to send me a message!</h2></div>
 <div id="container2">
   <div class="container">
-  <form method="post" action="process.php">
+  <form method="post" name="myForm" onsubmit="submitFunction(); return false;">
     <div><input id="top" type="text" name="name" placeholder="Name"></div>
-    <div><input type="text" name="email" placeholder="Email"></div>
+    <div><input type="email" name="email" placeholder="Email"></div>
     <div>
       <textarea rows=15 cols=60 name="message" placeholder="Message"></textarea>
     </div>
@@ -30,4 +33,3 @@
 </div>
 </body>
 </html>
- 
